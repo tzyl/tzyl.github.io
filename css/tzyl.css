@@ -7,3 +7,12 @@ body {
 #profile-description a.btn {
     margin: 10px 0 20px 0;
 }
+
+/* PROJECT PAGE */
+.project-title {
+
+}
+
+.project-picture:hover {
+    opacity: 0.5;
+}
