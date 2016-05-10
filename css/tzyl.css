@@ -3,6 +3,19 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+.navbar-social {
+    margin: 0;
+    font-size: 25px;
+}
+
+.navbar-social > li {
+    float: left;
+}
+
+.navbar-social > li > a {
+    padding: 15px 15px 10px 15px;
+}
+
 /* HOME PAGE */
 #profile-description a.btn {
     margin: 10px 0 20px 0;
