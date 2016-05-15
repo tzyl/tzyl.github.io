@@ -18,7 +18,12 @@ body {
 
 /* HOME PAGE */
 #profile-description a.btn {
-    margin: 10px 0 20px 0;
+    margin: 10px 20px 20px 0;
+}
+
+/* ABOUT PAGE */
+.job-title {
+    font-weight: bold;
 }
 
 /* PROJECT PAGE */
@@ -28,4 +33,28 @@ body {
 
 .project-picture:hover {
     opacity: 0.5;
+}
+
+/* CONTACT PAGE */
+.table-borderless tbody tr td, .table-borderless tbody tr th, .table-borderless thead tr th {
+    border: none;
+}
+
+.centered-table {
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-table {
+    font-size: 28px;
+    padding-bottom: 20px;
+}
+
+.navbar-a {
+    color: #777;
+}
+
+.navbar-a:hover {
+    color: #333;
 }
