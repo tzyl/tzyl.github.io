@@ -1,6 +1,30 @@
+html, body {
+    height: 100%;
+}
+
 body {
-    padding: 100px 0 50px 0;
+    padding-top: 100px;
     font-family: 'Open Sans', sans-serif;
+}
+
+.wrapper {
+    min-height: 100%;
+    margin: 0 auto -51px;
+}
+
+.push {
+    height: 100px;
+}
+
+footer {
+    height: 50px;
+    border-top: 1px solid #e7e7e7;
+    background-color: #f8f8f8;
+}
+
+.footer-text {
+    color: #777;
+    margin: 15px 0
 }
 
 .navbar-social {
