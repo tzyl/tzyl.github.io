@@ -1,0 +1,43 @@
+---
+layout: default
+navbar-title: Contact
+order: 4
+---
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+            <table class="table table-borderless contact-table">
+                <tr>
+                    <td><a class="navbar-a" href="https://github.com/tzyl" target="_blank"><i class="fa fa-github-square" aria-hidden="true"></i></a></td>
+                    <td>Check out my <a href="https://github.com/tzyl" target="_blank">GitHub</a></td>
+                </tr>
+                <tr>
+                    <td><a class="navbar-a" href="https://www.linkedin.com/in/timothyleung95" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></td>
+                    <td>Connect with me on <a href="https://www.linkedin.com/in/timothyleung95" target="_blank">LinkedIn</a></td></tr>
+            </table>
+            <p>Or leave me a message below:</p>
+            <form action="https://formspree.io/tim.00@hotmail.co.uk" method="POST">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input type="email" class="form-control" id="email" name="_replyto" placeholder="Your email address" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea type="text" class="form-control" id="message" name="message" rows="8" placeholder="Your message" required></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-success">Send</button>
+                </div>
+                <input type="text" name="_gotcha" style="display:none">
+                <input type="hidden" name="_subject" value="Your message to Tim Leung" />
+                <input type="hidden" name="_next" value="thanks.html">
+                <!-- <input type="text" name="_format" value="plain" style="display:none"> -->
+            </form>
+        </div>
+    </div>
+</div>

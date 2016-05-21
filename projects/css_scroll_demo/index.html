@@ -1,213 +1,201 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Tim Leung - CSS/Javascript scroll effect demo</title>
-        <meta name="description" content="ScrollMagic demo by Tim Leung.">
-        <link rel="icon" href="">
+---
+layout: demo
+title: Tim Leung - CSS/Javascript scroll effect demo
+description: CSS/Javascript scroll effect demo by Tim Leung.
+---
 
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-aNUYGqSUL9wG/vP7+cWZ5QOM4gsQou3sBfWRr/8S3R1Lv0rysEmnwsRKMbhiQX/O" crossorigin="anonymous">
-        <link rel="stylesheet" href="css/demo.css">
-    </head>
-    <body>
-        <a class="btn btn-success" id="shuffle-button" href="#">Shuffle Books!</a>
-        <!-- <a class="btn btn-success" id="order-button" href="#">Order Books!</a> -->
+<a class="btn btn-success" id="shuffle-button" href="#">Shuffle Books!</a>
+<!-- <a class="btn btn-success" id="order-button" href="#">Order Books!</a> -->
 
-        <div class="instruction-banner">
-            <div class="container">
-                <h1>Scroll down to see my modules!</h1>
-            </div>
-        </div>
+<div class="instruction-banner">
+    <div class="container">
+        <h1>Scroll down to see my modules!</h1>
+    </div>
+</div>
 
-        <div class="tickets visible-sm visible-md visible-lg">
-            <div class="container">
-                <div class="row target">
-                    <div class="visible-sm visible-md visible-lg">
-                        <div class="col-sm-3 col-md-2">
-                            <div class="ticket type1">
-                                <p>Part B</p>
-                                <hr>
-                                <p>Logic</p>
-                            </div>
-                        </div>
-                        <div class="col-sm-3 col-md-2">
-                            <div class="ticket type2">
-                                <p>Part B</p>
-                                <hr>
-                                <p>Set Theory</p>
-                            </div>
-                        </div>
-                        <div class="col-sm-3 col-md-2">
-                            <div class="ticket type3">
-                                <p>Part B</p>
-                                <hr>
-                                <p>Applied Probability</p>
-                            </div>
-                        </div>
-                        <div class="col-sm-3 col-md-2">
-                            <div class="ticket type4">
-                                <p>Part B</p>
-                                <hr>
-                                <p>Mathematical Ecology and Biology</p>
-                            </div>
-                        </div>
-                        <div class="col-sm-3 col-md-2">
-                            <div class="ticket type1">
-                                <p>Part B</p>
-                                <hr>
-                                <p>Applied Partial Differential Equations</p>
-                            </div>
-                        </div>
-                        <div class="col-sm-3 col-md-2">
-                            <div class="ticket type2">
-                                <p>Part B</p>
-                                <hr>
-                                <p>Mathematical Models of Financial Derivatives</p>
-                            </div>
-                        </div>
-                        <div class="col-sm-3 col-md-2">
-                            <div class="ticket type3">
-                                <p>Part B</p>
-                                <hr>
-                                <p>Viscous Flow</p>
-                            </div>
-                        </div>
-                        <div class="col-sm-3 col-md-2">
-                            <div class="ticket type4">
-                                <p>Part B</p>
-                                <hr>
-                                <p>Graph Theory</p>
-                            </div>
-                        </div>
-                        <div class="col-sm-3 col-md-2">
-                            <div class="ticket type1">
-                                <p>Part A</p>
-                                <hr>
-                                <p>Metric Spaces and Complex Analysis</p>
-                            </div>
-                        </div>
-                        <div class="col-sm-3 col-md-2">
-                            <div class="ticket type2">
-                                <p>Part A</p>
-                                <hr>
-                                <p>Linear Algebra</p>
-                            </div>
-                        </div>
-                        <div class="col-sm-3 col-md-2">
-                            <div class="ticket type3">
-                                <p>Part A</p>
-                                <hr>
-                                <p>Waves and Fluids</p>
-                            </div>
-                        </div>
-                        <div class="col-sm-3 col-md-2">
-                            <div class="ticket type4">
-                                <p>Part A</p>
-                                <hr>
-                                <p>Differential Equations I</p>
-                            </div>
-                        </div>
+<div class="tickets visible-sm visible-md visible-lg">
+    <div class="container">
+        <div class="row target">
+            <div class="visible-sm visible-md visible-lg">
+                <div class="col-sm-3 col-md-2">
+                    <div class="ticket type1">
+                        <p>Part B</p>
+                        <hr>
+                        <p>Logic</p>
                     </div>
-                    <div class="visible-md visible-lg">
-                        <div class="col-sm-3 col-md-2">
-                            <div class="ticket type1">
-                                <p>Part A</p>
-                                <hr>
-                                <p>Quantum Theory</p>
-                            </div>
-                        </div>
-                        <div class="col-sm-3 col-md-2">
-                            <div class="ticket type2">
-                                <p>Part A</p>
-                                <hr>
-                                <p>Integration</p>
-                            </div>
-                        </div>
-                        <div class="col-sm-3 col-md-2">
-                            <div class="ticket type3">
-                                <p>Part A</p>
-                                <hr>
-                                <p>Differential Equations II</p>
-                            </div>
-                        </div>
-                        <div class="col-sm-3 col-md-2">
-                            <div class="ticket type4">
-                                <p>Part A</p>
-                                <hr>
-                                <p>Probability</p>
-                            </div>
-                        </div>
-                        <div class="col-sm-3 col-md-2">
-                            <div class="ticket type1">
-                                <p>Part A</p>
-                                <hr>
-                                <p>Integral Transforms</p>
-                            </div>
-                        </div>
-                        <div class="col-sm-3 col-md-2">
-                            <div class="ticket type2">
-                                <p>Part A</p>
-                                <hr>
-                                <p>Calculus of Variations</p>
-                            </div>
-                        </div>
+                </div>
+                <div class="col-sm-3 col-md-2">
+                    <div class="ticket type2">
+                        <p>Part B</p>
+                        <hr>
+                        <p>Set Theory</p>
                     </div>
-                    <!--
-                    <div class="visible-lg">
-                        <div class="col-sm-3 col-md-2">
-                            <div class="ticket type1">
-                                <p>Ticket 19</p>
-                                <hr>
-                                <p>Testing</p>
-                            </div>
-                        </div>
-                        <div class="col-sm-3 col-md-2">
-                            <div class="ticket type2">
-                                <p>Ticket 20</p>
-                                <hr>
-                                <p>Testing</p>
-                            </div>
-                        </div>
-                        <div class="col-sm-3 col-md-2">
-                            <div class="ticket type3">
-                                <p>Ticket 21</p>
-                                <hr>
-                                <p>Testing</p>
-                            </div>
-                        </div>
-                        <div class="col-sm-3 col-md-2">
-                            <div class="ticket type4">
-                                <p>Ticket 22</p>
-                                <hr>
-                                <p>Testing</p>
-                            </div>
-                        </div>
-                        <div class="col-sm-3 col-md-2">
-                            <div class="ticket type1">
-                                <p>Ticket 23</p>
-                                <hr>
-                                <p>Testing</p>
-                            </div>
-                        </div>
-                        <div class="col-sm-3 col-md-2">
-                            <div class="ticket type2">
-                                <p>Ticket 24</p>
-                                <hr>
-                                <p>Testing</p>
-                            </div>
-                        </div>
+                </div>
+                <div class="col-sm-3 col-md-2">
+                    <div class="ticket type3">
+                        <p>Part B</p>
+                        <hr>
+                        <p>Applied Probability</p>
                     </div>
-                    -->
+                </div>
+                <div class="col-sm-3 col-md-2">
+                    <div class="ticket type4">
+                        <p>Part B</p>
+                        <hr>
+                        <p>Mathematical Ecology and Biology</p>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-md-2">
+                    <div class="ticket type1">
+                        <p>Part B</p>
+                        <hr>
+                        <p>Applied Partial Differential Equations</p>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-md-2">
+                    <div class="ticket type2">
+                        <p>Part B</p>
+                        <hr>
+                        <p>Mathematical Models of Financial Derivatives</p>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-md-2">
+                    <div class="ticket type3">
+                        <p>Part B</p>
+                        <hr>
+                        <p>Viscous Flow</p>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-md-2">
+                    <div class="ticket type4">
+                        <p>Part B</p>
+                        <hr>
+                        <p>Graph Theory</p>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-md-2">
+                    <div class="ticket type1">
+                        <p>Part A</p>
+                        <hr>
+                        <p>Metric Spaces and Complex Analysis</p>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-md-2">
+                    <div class="ticket type2">
+                        <p>Part A</p>
+                        <hr>
+                        <p>Linear Algebra</p>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-md-2">
+                    <div class="ticket type3">
+                        <p>Part A</p>
+                        <hr>
+                        <p>Waves and Fluids</p>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-md-2">
+                    <div class="ticket type4">
+                        <p>Part A</p>
+                        <hr>
+                        <p>Differential Equations I</p>
+                    </div>
                 </div>
             </div>
+            <div class="visible-md visible-lg">
+                <div class="col-sm-3 col-md-2">
+                    <div class="ticket type1">
+                        <p>Part A</p>
+                        <hr>
+                        <p>Quantum Theory</p>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-md-2">
+                    <div class="ticket type2">
+                        <p>Part A</p>
+                        <hr>
+                        <p>Integration</p>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-md-2">
+                    <div class="ticket type3">
+                        <p>Part A</p>
+                        <hr>
+                        <p>Differential Equations II</p>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-md-2">
+                    <div class="ticket type4">
+                        <p>Part A</p>
+                        <hr>
+                        <p>Probability</p>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-md-2">
+                    <div class="ticket type1">
+                        <p>Part A</p>
+                        <hr>
+                        <p>Integral Transforms</p>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-md-2">
+                    <div class="ticket type2">
+                        <p>Part A</p>
+                        <hr>
+                        <p>Calculus of Variations</p>
+                    </div>
+                </div>
+            </div>
+            <!--
+            <div class="visible-lg">
+                <div class="col-sm-3 col-md-2">
+                    <div class="ticket type1">
+                        <p>Ticket 19</p>
+                        <hr>
+                        <p>Testing</p>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-md-2">
+                    <div class="ticket type2">
+                        <p>Ticket 20</p>
+                        <hr>
+                        <p>Testing</p>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-md-2">
+                    <div class="ticket type3">
+                        <p>Ticket 21</p>
+                        <hr>
+                        <p>Testing</p>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-md-2">
+                    <div class="ticket type4">
+                        <p>Ticket 22</p>
+                        <hr>
+                        <p>Testing</p>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-md-2">
+                    <div class="ticket type1">
+                        <p>Ticket 23</p>
+                        <hr>
+                        <p>Testing</p>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-md-2">
+                    <div class="ticket type2">
+                        <p>Ticket 24</p>
+                        <hr>
+                        <p>Testing</p>
+                    </div>
+                </div>
+            </div>
+            -->
         </div>
+    </div>
+</div>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-        <script src="js/demo.js"></script>
-    </body>
-</html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script src="js/demo.js"></script>
