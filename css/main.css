@@ -1,3 +1,4 @@
+/* GENERAL */
 body {
     padding-top: 100px;
     min-height: 100vh;
@@ -11,6 +12,16 @@ body {
     min-height: 100%;
 }
 
+.fa-icon-clickable {
+    color: black !important;
+    cursor: pointer !important;
+}
+
+.fa-icon-clickable:hover {
+    opacity: 0.5 !important;
+}
+
+/* FOOTER */
 footer {
     min-height: 50px;
     border-top: 1px solid #e7e7e7;
@@ -38,6 +49,14 @@ footer {
 }
 
 /* NAVBAR */
+.navbar-default .navbar-brand {
+    color: black;
+}
+
+.navbar-default .navbar-brand:hover {
+    opacity: 0.8;
+}
+
 .navbar-social {
     margin: 0;
     font-size: 25px;
@@ -49,14 +68,6 @@ footer {
 
 .navbar-social > li > a {
     padding: 15px 15px 10px 15px;
-}
-
-.navbar-a {
-    color: #777;
-}
-
-.navbar-a:hover {
-    color: #333;
 }
 
 /* HOME PAGE */
@@ -86,5 +97,11 @@ footer {
 .contact-table {
     width: auto;
     font-size: 20px;
-    padding-bottom: 20px;
+    margin-bottom: 10px;
+}
+
+@media (min-width: 500px) {
+    .contact-table {
+        font-size: 25px;
+    }
 }
