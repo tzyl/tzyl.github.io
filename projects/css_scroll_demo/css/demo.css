@@ -1,6 +1,6 @@
 body {
   overflow-x: hidden;
-  padding: 50px 0 50px 0;
+  padding-top: 50px;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -18,7 +18,7 @@ body {
 #shuffle-button, #order-button {
   position: fixed;
   z-index: 1;
-  right: 0;
+  right: 20px;
 }
 
 #shuffle-button {
@@ -29,62 +29,104 @@ body {
   top: 150px;
 }
 
+.tickets .target {
+  padding-bottom: 30px;
+}
+
 .tickets .ticket {
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-  height: 220px;
+  height: 210px;
   font-size: 18px;
   margin-bottom: 1em;
   overflow: hidden;
   padding: 1em;
   position: relative;
+  transition: all linear 0.1s;
 }
+
 @media (max-width: 1199px) {
   .tickets .ticket {
     font-size: 14px;
-    height: 180px;
+    height: 170px;
   }
 }
+
+@media (max-width: 991px) {
+  .tickets .ticket {
+    font-size: 11px;
+    height: 150px;
+  }
+}
+
 .tickets .ticket hr {
   border-color: rgba(255, 255, 255, 0.6);
   margin: 0 0 15px;
 }
+
 .tickets .ticket .title {
   background: rgba(255, 255, 255, 0.6);
   margin: 0 0 1em;
   padding: 5px;
   text-align: center;
 }
+
+.tickets .ticket.part-a {
+  background: #00a7ed;
+  color: #ffffff;
+}
+
+/*.tickets .ticket.part-a .title {
+  color: #00a7ed;
+}*/
+
+.tickets .ticket.part-b {
+  background: #273e7a;
+  color: #ffffff;
+}
+
+/*.tickets .ticket.part-b .title {
+  color: #273e7a;
+}*/
+/*
 .tickets .ticket.type1 {
   -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   background: #ffe35b;
   color: #ef5c4b;
 }
+
 .tickets .ticket.type1 .title {
   color: #ffe35b;
 }
+
 .tickets .ticket.type2 {
   background: #00a7ed;
   color: #ffffff;
 }
+
 .tickets .ticket.type2 .title {
   color: #00a7ed;
 }
+
 .tickets .ticket.type3 {
   background: #ef5c4c;
   color: #ffffff;
 }
+
 .tickets .ticket.type3 .title {
   color: #ef5c4c;
 }
+
 .tickets .ticket.type4 {
   background: #273e7a;
   color: #ffffff;
 }
+
 .tickets .ticket.type4 .title {
   color: #273e7a;
 }
+*/

@@ -85,8 +85,17 @@ footer {
 
 }
 
+.project-picture {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
 .project-picture:hover {
     opacity: 0.5;
+}
+
+.project-divider {
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 /* CONTACT PAGE */
